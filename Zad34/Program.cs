@@ -20,11 +20,11 @@ void ThreeNumberEven(int[] array)
     int numberExist = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-       if (arr[i]%2==0 )
-       {
-        numberExist++;
-       }
-    
+        if (arr[i] % 2 == 0)
+        {
+            numberExist++;
+        }
+
     }
     if (numberExist > 0)
     {
