@@ -10,7 +10,7 @@ void RandomArray(int[] array)
     for (int i = 0; i < arr.Length; i++)
     {
         Random rnd = new Random();
-        int value = rnd.Next(50);
+        int value = rnd.Next(-50, 50);
         arr[i] = value;
         Console.Write($"{arr[i]} ");
     }
@@ -27,7 +27,8 @@ void SumUnevenElements(int[] array)
         }
 
     }
-    Console.Write($"Сумма  нечетных  чисел: {sumNumber}");
+    Console.WriteLine();
+    Console.Write($"Сумма  чисел с нечетным индексом: {sumNumber}");
 }
 RandomArray(arr);
 SumUnevenElements(arr);
